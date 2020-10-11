@@ -175,7 +175,7 @@ if __name__ == '__main__':
     number = input('下载本集？\n[1].本集\n2.全集\n')
     if number != '2':
         print('正在下载本集！')
-        main(url)
+        main(url, merge)
     else:
         try:
             url = url.split('?')[0]
