@@ -128,7 +128,6 @@ def combine_files(video, audio, out):
     subprocess.call("ffmpeg -i " + video + " -i " + audio + ' -c copy ' + out, shell=True)
 
 def main(url, merge):
-    # merge = input('是否将视频和音频合并？\n[1].合并\n2.不合并\n')
     try:
         page = int(url.split('?')[-1].split('=')[-1])
         p = page - 1
